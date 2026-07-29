@@ -1,0 +1,6 @@
+Migration notes
+===============
+
+Create migration scripts with:
+
+alembic revision --autogenerate -m "initial"

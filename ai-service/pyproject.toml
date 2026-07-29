@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelsense-ai-service"
+version = "0.1.0"
+description = "IntelSense AI - FastAPI microservice scaffold"
+authors = [{name = "IntelSense Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "fastapi>=0.95.0,<0.100.0",
+  "uvicorn[standard]>=0.22.0,<0.25.0",
+  "pydantic>=1.10.0,<2.0",
+  "sqlalchemy>=1.4.49,<2.0",
+  "alembic>=1.11.0,<2.0",
+  "asyncpg>=0.28.1,<0.30.0",
+  "python-dotenv>=1.0.0",
+  "redis>=4.5.5",
+  "loguru>=0.7.0",
+  "httpx==0.24.1",
+  "PyJWT>=2.8.0",
+  "prometheus-client>=0.17.0",
+  "langdetect>=1.0.0",
+  "aioredis>=2.0.0",
+  "pytest>=7.4.0",
+  "pytest-asyncio>=0.22.0",
+]
+
+[project.optional-dependencies]
+gpu = ["torch"]
