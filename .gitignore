@@ -1,0 +1,18 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# Java
+target/
+
+# Environment
+.env
+
+# Build
+dist/
+build/
